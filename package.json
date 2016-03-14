@@ -1,0 +1,43 @@
+{
+  "name": "coderconf.org",
+  "version": "1.0.0",
+  "description": "Coder Conf Website",
+  "scripts": {
+    "start": "webpack-dev-server --progress",
+    "build": "NODE_ENV=production webpack -config ./webpack.production.config.js --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderconf/coderconf.org.git"
+  },
+  "author": "Mostafa Mirmousavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderconf/coderconf.org/issues"
+  },
+  "homepage": "http://coderconf.org",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.8.2",
+    "jquery": "^2.2.1",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.4.2",
+    "precss": "^1.4.0",
+    "react-transform-hmr": "^1.0.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
