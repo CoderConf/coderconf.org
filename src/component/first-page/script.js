@@ -2,14 +2,18 @@ import React, {Component} from 'react';
 import config from './config.json';
 import styles from './style.sass';
 
-class FirstPage extends Component {
+class Page extends Component {
     render() {
         return (
             <div className={styles.root}>
-                {config.contentText}
+                <div className={styles.header}>
+                    <h1>{config.title}</h1>
+                    <h3>{config.description}</h3>
+                </div>
+                <p className={styles.downward}>⬇</p>
             </div>
         );
     }
 }
 
-export default FirstPage
+export default Page
