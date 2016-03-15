@@ -23,6 +23,14 @@ module.exports = {
             {
                 test: /\.css$|.sass$/,
                 loader: 'style!css?modules!sass'
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader:'file'
+            },
+            {
+                test: /\.(woff|woff2|ttf|eot)$/,
+                loader: 'file'
             }
         ]
     },

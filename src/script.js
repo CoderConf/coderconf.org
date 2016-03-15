@@ -1,8 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
-import FirstPage from './component/first-page/script.js';
 
-import './style.css';
+import FirstPage from './component/first-page/script';
+import DescriptionPage from './component/description-page/script';
+
+import './style.sass';
 
 
-render(<FirstPage />, document.querySelector('.first-page'));
+render(
+    <div>
+        <FirstPage />
+        <DescriptionPage />
+    </div>
+    , document.querySelector('.pages'));
