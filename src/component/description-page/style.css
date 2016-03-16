@@ -1,7 +1,6 @@
 .root {
-  padding: 100px 50px;
+  padding: 80px;
   text-align: center;
-  width: 80%;
-  margin: 0 auto; }
+  border-bottom: 1px dashed gray; }
 
 /*# sourceMappingURL=style.css.map */

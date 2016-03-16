@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import config from './config.json';
+import config from './content.json';
 import styles from './style.sass';
 
 class Page extends Component {
@@ -7,20 +7,9 @@ class Page extends Component {
         return (
             <div className={styles.root}>
                 <h1>{config.title}</h1>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
-                <p>{config.description}</p>
+                {config.description.map(function(value) {
+                    return <p>{value}</p>
+                })}
             </div>
         );
     }

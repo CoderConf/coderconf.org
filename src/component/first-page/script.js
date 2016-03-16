@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import config from './config.json';
+import config from './content.json';
 import styles from './style.sass';
 
 class Page extends Component {
