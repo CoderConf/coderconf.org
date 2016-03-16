@@ -3,9 +3,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'eval-source-map',
+
     entry: __dirname + "/src/script.js",
     output: {
-        path: __dirname + "/dist",
+        path: __dirname + "/build",
         filename: "bundle.js"
     },
 
@@ -25,8 +26,8 @@ module.exports = {
                 loader: 'style!css?modules!sass'
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loader:'file'
+                test: /\.(jpe?g|png|gif|svg)$/,
+                loader: 'file'
             },
             {
                 test: /\.(woff|woff2|ttf|eot)$/,
@@ -39,12 +40,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: __dirname + "/src/index.tmpl.html"
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery"
-        })
+        new webpack.HotModuleReplacementPlugin()
     ],
 
     devServer: {

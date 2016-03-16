@@ -1,19 +1,20 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+    devtool: 'source-map',
+
     entry: __dirname + '/src/script.js',
     output: {
-        path: __dirname + "/build",
-        filename: "[name]-[hash].js"
+        path: __dirname + "/web",
+        filename: "bundle.js"
     },
 
     module: {
         loaders: [
             {
                 test: /\.json$/,
-                loader: 'json'
+                loader: "json"
             },
             {
                 test: /\.js$/,
@@ -21,8 +22,16 @@ module.exports = {
                 loader: 'babel'
             },
             {
-                test: /\.css$|\.sass/,
-                loader: ExtractTextPlugin.extract('style!css?modules!sass')
+                test: /\.css$|.sass$/,
+                loader: 'style!css?modules!sass'
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/,
+                loader: 'file'
+            },
+            {
+                test: /\.(woff|woff2|ttf|eot)$/,
+                loader: 'file'
             }
         ]
     },
@@ -32,8 +41,7 @@ module.exports = {
             template: __dirname + '/src/index.tmpl.html'
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.optimize.UglifyJsPlugin(),
-        new ExtractTextPlugin("[name]-[hash].css")
+        new webpack.optimize.UglifyJsPlugin()
     ]
 
 }   
