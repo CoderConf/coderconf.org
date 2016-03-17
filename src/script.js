@@ -9,19 +9,33 @@ import SchedulePage from './component/schedule-page/script';
 import SponsorsPage from './component/sponsors-page/script';
 import VenuePage from './component/venue-page/script';
 import ContactPage from './component/contact-page/script';
+import Divaider from './component/divider/script';
 
-import './style.sass';
+import './global/style.sass';
 
 
 render(
     <div>
         <FirstPage />
+            
         <DescriptionPage />
+        <Divaider />
+
         <BoardsPage />
+        <Divaider />
+
         <SubmitArticlePage />
+        <Divaider />
+
         <SchedulePage />
+        <Divaider />
+
         <SponsorsPage />
+        <Divaider />
+
         <VenuePage />
+        <Divaider />
+
         <ContactPage />
     </div>
     , document.querySelector('.main'));
