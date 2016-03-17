@@ -1,7 +1,4 @@
 .root {
-  background: #d6d6d6 url("./img/bg.jpg");
-  background-size: cover;
-  position: relative;
   height: 100vh; }
 
 .header {
