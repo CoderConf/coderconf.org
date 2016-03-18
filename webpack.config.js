@@ -30,7 +30,7 @@ module.exports = {
                 loader: 'file'
             },
             {
-                test: /\.(woff|woff2|ttf|eot)$/,
+                test: /\.(woff|woff2|ttf|eot|otf)$/,
                 loader: 'file'
             }
         ]

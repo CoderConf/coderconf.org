@@ -17,13 +17,8 @@ import './global/style.sass';
 render(
     <div>
         <FirstPage />
-            
         <DescriptionPage />
-        <Divaider />
-
         <BoardsPage />
-        <Divaider />
-
         <SubmitArticlePage />
         <Divaider />
 
