@@ -6,7 +6,7 @@ class Page extends Component {
     render() {
         return (
             <div className={styles.root}>
-                <h1>{config.title}</h1>
+                <h2>{config.title}</h2>
                 {config.description.map(function(value) {
                     return <p>{value}</p>
                 })}
