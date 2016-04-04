@@ -1,6 +1,8 @@
 # Coder Conf websit structure
 Conference website powered by Webpack and React
 
+This structure deprecated!
+
 ## Install
 `npm install`
 
