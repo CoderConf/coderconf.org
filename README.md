@@ -1,16 +1,5 @@
-# Coder Conf website
+# Coder Conf websit structure
 Conference website powered by Webpack and React
-
-## TODO
-- [ ] First page
-- [ ] Menu
-- [ ] Description page
-- [ ] Articles page
-- [ ] Schedule page
-- [ ] Boards page
-- [ ] Schedule page
-- [ ] Sponsors page
-- [ ] Contact page
 
 ## Install
 `npm install`
